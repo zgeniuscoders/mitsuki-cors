@@ -4,7 +4,7 @@
   "license": "MIT",
   "autoload": {
     "psr-4": {
-      "Mitsuki\\Cors\\": "src/",
+      "Mitsuki\\Listeners\\": "src/",
       "Tests\\": "tests/"
     }
   },
