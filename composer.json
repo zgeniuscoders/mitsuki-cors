@@ -2,6 +2,18 @@
   "name": "mitsuki/cors",
   "type": "lirary",
   "license": "MIT",
+  "description": "Official CORS listener for the Mitsuki PHP framework with IP whitelisting support",
+  "keywords": [
+    "cors",
+    "symfony",
+    "listener",
+    "http",
+    "security",
+    "ip-whitelist",
+    "cidr",
+    "mitsuki",
+    "micro-framework"
+  ],
   "autoload": {
     "psr-4": {
       "Mitsuki\\Listeners\\": "src/",
@@ -16,7 +28,8 @@
   ],
   "minimum-stability": "stable",
   "require-dev": {
-    "pestphp/pest": "^4.4"
+    "pestphp/pest": "^4.4",
+    "mitsuki/http": "^1.0"
   },
   "config": {
     "allow-plugins": {
@@ -25,7 +38,6 @@
   },
   "require": {
     "php": ">=8.1",
-    "mitsuki/listener-contracts": "^1.0",
-    "mitsuki/http": "^1.0"
+    "mitsuki/listener-contracts": "^1.0"
   }
 }
