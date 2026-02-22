@@ -4,8 +4,53 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d6752c6764c73e9b7f12d50b2f5937a9",
+    "content-hash": "a8801316b41372aedd757121fe3e8a18",
     "packages": [
+        {
+            "name": "mitsuki/http",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zgeniuscoders/mitsuki-http.git",
+                "reference": "e0e4232b42ba8f6da69e1f9d98bb8d8d2e0b2ced"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zgeniuscoders/mitsuki-http/zipball/e0e4232b42ba8f6da69e1f9d98bb8d8d2e0b2ced",
+                "reference": "e0e4232b42ba8f6da69e1f9d98bb8d8d2e0b2ced",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.4",
+                "symfony/http-foundation": "^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^4.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tests\\": "tests/",
+                    "Mitsuki\\Http\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "zgeniusecoders",
+                    "email": "zgeniusecoders@gmail.com"
+                }
+            ],
+            "description": "The HTTP component for the Mitsuki framework",
+            "support": {
+                "issues": "https://github.com/zgeniuscoders/mitsuki-http/issues",
+                "source": "https://github.com/zgeniuscoders/mitsuki-http/tree/v1.0.0"
+            },
+            "time": "2026-02-16T19:47:47+00:00"
+        },
         {
             "name": "mitsuki/listener-contracts",
             "version": "v1.0.0",
@@ -4589,7 +4634,9 @@
     "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": ">=8.1"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

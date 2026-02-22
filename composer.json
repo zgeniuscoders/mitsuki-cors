@@ -25,6 +25,7 @@
   },
   "require": {
     "php": ">=8.1",
-    "mitsuki/listener-contracts": "^1.0"
+    "mitsuki/listener-contracts": "^1.0",
+    "mitsuki/http": "^1.0"
   }
 }
