@@ -11,6 +11,13 @@
 |
 */
 
+use Mitsuki\Listeners\CorsListener;
+use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\HttpKernel\Controller\ControllerResolver;
+use Symfony\Component\HttpKernel\HttpKernel;
+use Symfony\Component\HttpKernel\HttpKernelInterface;
+use Symfony\Component\HttpKernel\KernelInterface;
+
 pest()->extend(Tests\TestCase::class)->in('Feature');
 
 /*
@@ -39,7 +46,15 @@ expect()->extend('toBeOne', function () {
 |
 */
 
-function something()
+function createHttpKernel(): HttpKernel
 {
-    // ..
+    return new HttpKernel(
+        new EventDispatcher(),
+        new ControllerResolver()
+    );
 }
+
+uses()->beforeEach(function () {
+    $this->kernel = createHttpKernel();
+    $this->listener = new CorsListener();
+})->in(__DIR__);
