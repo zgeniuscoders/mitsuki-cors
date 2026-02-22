@@ -1,0 +1,26 @@
+{
+  "name": "mitsuki/cors",
+  "type": "lirary",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Mitsuki\\Cors\\": "src/",
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "zgeniusecoders",
+      "email": "zgeniusecoders@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require-dev": {
+    "pestphp/pest": "^4.4"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
